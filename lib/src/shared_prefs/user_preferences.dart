@@ -40,6 +40,14 @@ class PreferenciasUsuario {
     _prefs.setString('nombre', value);
   }
 
+  get ultimaPagina {
+    return _prefs.getString('ultimaPagina') ?? 'home';
+  }
+
+  set ultimaPagina(String value) {
+    _prefs.setString('ultimaPagina', value);
+  }
+
 
   // bool _colorSecundario;
   // int _genero;
